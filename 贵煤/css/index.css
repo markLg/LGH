@@ -1,0 +1,20 @@
+/*body {
+	background: #172153;
+}*/
+.index-container{ 
+	min-width: 1280px
+}
+.nav-content {
+	width: 90%;
+	margin: 0 auto;
+	padding: 2% 0 1%
+}
+.nav-content p a {
+	display: block;
+	float: left;
+	height: 32px;
+	margin: 4px 13px 0 0
+}
+.nav-content p a img {
+	height: 100%
+}

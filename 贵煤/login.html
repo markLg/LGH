@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登录页面</title>
+		<link rel="icon" href="img/logo_head.jpg" />
+		<link rel="stylesheet" href="css/regist.css" />
+		<link rel="stylesheet" type="text/css" href="css/index-zh_cn.min.css"/>
+	</head>
+	<body>
+		<div class="content-regist">
+    <em><a href="javascript:;"><img src="img/logo.png" alt="" ></a></em>
+    <div id="basic_login">
+        <h3>登录</h3>
+        <ul class="clearfix">
+            <li><input id="email" name="email" type="text" class="input-regist" placeholder="键入注册邮箱" ><font class="email-tip"></font></li>
+            <li>
+                <input id="password" name="password" type="password" class="input-regist" placeholder="6-32位密码" >
+              <font></font>
+            </li>
+
+            <div class="remember clearfix">
+                <span>
+                    <div class="ga-checkbox">
+                        <input id="remember_me" type="checkbox" class="ng-pristine ng-valid" checked=""><b></b>
+                    </div>
+                    七日内免登录
+                </span>
+                <strong>
+                    <a href="javascript:void(0)" >忘记密码?</a>
+                    <br>
+                    <a href="javascript:void(0)" >没有收到邮箱认证邮件?</a>
+                </strong>
+            </div>
+            <a href="javascript:void(0)" class="btn-login" >登录</a>
+        </ul>
+    </div>
+
+    <div id="forget_pwd" style="display:none;">
+        <h3><a href="javascript:void(0)" class="back" >返回</a>重设密码</h3>
+        <ul class="clearfix">
+            <li class="findtips">获取重设密码邮件</li>
+            <li><input name="regEmail" id="regEmail" type="text" class="input-regist" placeholder="键入注册邮箱..." >
+            <font></font></li>
+            <font id="sendEmailTip"></font>
+            <a href="javascript:void(0)" class="btn-login" >重设密码</a>
+        </ul>
+    </div>
+
+    <div id="confirm_email" style="display:none;">
+        <h3><a href="javascript:void(0)" class="back" >登录</a>重新发送认证邮件</h3>
+        <ul class="clearfix">
+            <li class="findtips">重新发送认证邮件完成账户认证</li>
+            <li><input name="cfmRegEmail" id="cfmRegEmail" type="text" class="input-regist" placeholder="键入注册邮箱...">
+            <font></font></li>
+            <font id="confirmEmailTip"></font>
+            <a href="javascript:void(0)" class="btn-login" >获取邮件</a>
+        </ul>
+    </div>
+
+    <div class="to-regist">还没有账户?<a href="javascript:void(0);"  id="registFromLogin">立即注册</a></div>
+</div>
+	</body>
+</html>

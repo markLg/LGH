@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>贵煤数据首页</title>
+		<link rel="stylesheet" href="css/index3.css" />
+		<link rel="icon" href="img/logo_head.jpg" />
+		<script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/search.js" ></script>
+		<!--[if lte IE 8]>
+		<script src="http://cdn.bootcss.com/jquery/1.9.0/jquery.min.js"></script>
+		<![endif]-->
+		<script>
+			$(document).ready(function(){
+				if(window.ActiveXObject || "ActiveXObject" in window){
+					$("#select").css({'position':'none'});
+				}else{				
+					$("#select").css({'position':'absolute'});
+				};
+			});				
+		</script>
+		<script>
+			
+		if(navigator.userAgent.indexOf("MSIE")>0){   
+		      if(navigator.userAgent.indexOf("MSIE 6.0")>0){   
+		        alert("请升级最新浏览器");
+		      }   
+		      if(navigator.userAgent.indexOf("MSIE 7.0")>0){  
+		      	alert("请升级最新浏览器");
+		        window.location.href = "http://xiazai.sogou.com/index.html?e=1972";
+		      }   
+		      if(navigator.userAgent.indexOf("MSIE 9.0")>0){
+		        alert("请升级最新浏览器"); 
+		        window.location.href = "http://xiazai.sogou.com/index.html?e=1972";
+		      }   
+		      if(navigator.userAgent.indexOf("MSIE 9.0")>0){  
+		       alert("请升级最新浏览器");
+		       window.location.href = "http://xiazai.sogou.com/index.html?e=1972";
+		      }   
+		    } 
+		</script>
+	</head>
+	<body>
+		<div class="nav-content">
+          <p class="mobileindex-logo l">
+            <a href="javascript:;">
+	          <img src="img/logo.png" alt="" >
+	        </a>
+            <a href="javascript:;">
+	          <img src="img/logo_txt.png" alt="" class="logo_txt">
+	        </a>
+          </p>
+          <div class="r">
+            <span class="login-regist">
+            	<a href="javascript:;">登录</a>
+          </span>
+           </div>
+        </div>  
+        <!--搜索框-->
+         <div class="search">
+				<form action="" method="get">
+					<div class="doub">
+					    <div id="content">
+					        <div class="first">
+					        	<div class="selectBox">
+					        		<select name="" id="select">
+										<option value="银行">银行</option>
+										<option value="公司">公司</option>
+										<option value="集团">集团</option>
+									</select>
+									<span class="tra"></span>
+									</div>
+					        	<input id="kw" onKeyup="getContent(this);" placeholder="输入您想要查询的信息，如：煤炭、集团、银行" />
+					        </div>
+					    </div>
+						<input type="button" value="搜索"  class="ipt2"/>
+						<div class="information">
+							<a href="#">全部信息</a>
+						</div>
+					
+					</div>
+				</form>
+			<div id="append"></div>				
+			</div>
+			<div class="describe">
+			<div class="describe-content">
+				<div class="describe-list trans">
+	              <div class="describe-list-describe trans">
+	                <span>
+		              <img src="img/icon47.png" alt="公司信息" title="公司信息>
+		              <i class="icon-apply-ranking"></i>
+	            	</span>
+		                <label>公司信息</label>
+		                <b>基于大量煤炭数据洞察用户特征，展现煤炭市场热度</b>
+		                <a href="javascript:;" title="公司信息">查看详情</a>
+	              </div>
+           		</div>
+           		   <div class="describe-list trans">
+              <div class="describe-list-describe trans">
+                <span>
+              <img src="http://jic2.talkingdata.com/observatory/mi/images/icon-publicRank.png" alt="数据报告" title="数据报告">
+              <i class="icon-public"></i>
+            </span>
+                <label>银行信息</label>
+                <b>基于大量煤炭数据洞察用户特征，展现煤炭市场热度</b>
+                <a href="javascript:;" title="数据报告">查看详情</a>
+              </div>
+            </div>
+            <div class="describe-list trans">
+              <div class="describe-list-describe trans">
+                <span>
+                    <img src="http://jic2.talkingdata.com/observatory/mi/images/icon-app-ranking.png" alt="数据报告" title="数据报告">
+                    <i class="icon-app-ranking"></i>
+                </span>
+                <label>煤矿信息</label>
+                <b>基于大量煤炭数据洞察用户特征，展现煤炭市场热度</b>
+                <a href="javascript:;">查看详情</a>
+              </div>
+            </div>
+            <div class="describe-list trans">
+              <div class="describe-list-describe trans">
+                <span>
+                    <img src="img/icon50.png" alt="数据报告" title="数据报告">
+                    <i class="icon-weibo"></i>
+                </span>
+                <label>数据报告</label>
+                <b>基于大量煤炭数据洞察用户特征，展现煤炭市场热度</b>
+                <a href="javascript:;">查看详情</a>
+              </div>
+            </div>
+            <div class="describe-list trans">
+              <div class="describe-list-describe trans">
+                <span>
+              <img src="img/icon48.png" alt="数据报告" title="数据报告">
+              <i class="icon-phone"></i>
+            </span>
+                <label>数据报告</label>
+                <b>基于大量煤炭数据洞察用户特征，展现煤炭市场热度</b>
+                <a href="javascript:;" title="终端指数">查看详情</a>
+              </div>
+            </div>
+            <div class="describe-list trans">
+              <div class="describe-list-describe trans">
+                <span>
+              <img src="http://jic2.talkingdata.com/observatory/mi/images/icon-dataReport.png" alt="数据报告" title="数据报告">
+              <i class="icon-data-report"></i>
+            </span>
+                <label>数据报告</label>
+                <b>基于大量煤炭数据洞察用户特征，展现煤炭市场热度</b>
+                <a href="javascript:;" title="数据报告">查看详情</a>
+              </div>
+            </div>
+            <div class="describe-list trans">
+              <div class="describe-list-describe trans">
+                <span>
+              <img src="http://jic2.talkingdata.com/observatory/mi/images/icon-userInsight.png" alt="市场洞察" title="市场洞察">
+              <i class="icon-user"></i>
+            </span>
+                <label>市场洞察</label>
+                <b>基于大量煤炭数据洞察用户特征，展现煤炭市场热度</b>
+                <a href="javascript:;" title="市场洞察">查看详情</a>
+              </div>
+            </div>
+           		 <div class="describe-list trans forthcoming">
+              <div class="describe-list-describe11 trans">
+                <span>
+                  <img src="http://jic2.talkingdata.com/observatory/mi/images/icon-coming.png">
+                </span>
+                <label>新功能研发中 <b>.</b> 敬请期待</label>
+              </div>
+            </div>
+			</div>
+			</div>
+			<script type="text/javascript" src="js/search.js" ></script>
+	</body>
+</html>

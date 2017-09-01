@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>詳情頁</title>
+		<link rel="icon" href="img/logo_head.jpg" />
+		<link rel="stylesheet" href="css/header2.css" />
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/app-detail.css" />
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
+		<script>
+			$(function(){
+				if(window.ActiveXObject || "ActiveXObject" in window){
+					$("#select").css({'position':'none',})
+				}else{				
+					$("#select").css({'position':'absolute',})
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div class="header clearfix">
+      <!--logo-->
+      <div class="logo l">
+        <a href="javascript:;"><img src="img/logo.png" alt="" ></a>
+      </div>
+      <!--nav-->
+      <div class="nav l">
+				<ul class="clearfix">
+          <li>
+            <a href="index2.html">首页</a>
+          </li>
+           <li class="nav_choose">
+           <a href="javascript:;">矿企</a>
+          </li>
+          <li class="">
+           <a href="javascript:;">集团</a>
+          </li>
+          <li>
+            <a href="javascript:;">银行</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="r header-operate-container">
+          <!--search-->
+         <div class="search">
+				<form action="" method="get">
+					<div class="doub">
+					    <div id="content">
+					        <div class="first">
+					        	<div class="selectBox">
+					        		<select name="" id="select">
+										<option value="银行">银行</option>
+										<option value="公司">公司</option>
+										<option value="集团">集团</option>
+									</select>
+									<span class="tra"></span>
+									</div>
+					        	<input id="kw" onKeyup="getContent(this);" placeholder="请输入需查找的内容" />
+					        </div>
+					    </div>
+						<input type="button" value="搜索"  class="ipt2"/>
+					
+					</div>
+				</form>
+			<div id="append"></div>				
+			</div>	
+				<div class="regist">
+           			 <a href="login.html">登录</a>
+				</div>
+
+      </div>
+    </div>
+    <div class="main-container">
+
+	<!-- 主要内容 -->
+	<div class="bg-appDetailTop">
+		<div class="appDetail-container draw clearfix">
+			<div class="ranking-title l">
+				<i class="apply-rank"><img src="http://jic2.talkingdata.com/observatory/mi/images/icon-publicRank.png"> </i>矿企数据
+			</div>
+	</div>
+	<div class="mainDatas-container clearfix">
+
+		<div class="data-content app-rank clearfix">
+			<!--分类列表-->
+			<div class="app-menu">
+				<ul class="menu-en ps-container" style="">
+					<li class="trans active title"><span td-data="0">全部</span></li>
+					<li class="trans one"><span td-data="1">生产</span></li>
+					<li class="trans"><span td-data="9">技改</span></li>
+					<li class="trans"><span td-data="208">关闭</span></li> 	
+				
+					<div class="ps-scrollbar-x" style="left: 0px; bottom: 3px; width: 0px;"></div>
+				</ul>				
+			</div>			
+			<!--覆盖排行-->
+			<div class="appRank-container coverage-rank">
+				<div class="weibo-ranking">
+					<div class="lists-container">
+						<div class="ranking-list-container">
+							<div class="weibo-ranking-contents">
+								<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tab-weiboRanking table" id="mytable">
+									<thead>
+									<tr id="bar_head">
+										<th scope="col" width="50px">序号</th>										
+										<th scope="col" width="400px" style="text-align: center;">企业名称</th>
+										<th scope="col" width="150px" style="text-align: center;">煤矿状态</th>
+										<th scope="col" width="400px" style="text-align: center;">备注</th>
+									</tr>
+									</thead>
+									<tbody>	
+										 <tr class="s3">                                                          
+									 		<td width="50px">0</td>
+									 		<td width="400px">
+			                                    <form method="get" action="http://192.168.31.194:8000/get_info/" id="qyh81">
+			                                        <a href="javascript:;" onclick="aa(&#39;qyh81&#39;)" id="81">贵州新西南矿业股份有限公司毕节市七星关区杨家湾煤矿</a>
+			                                        <input name="qyh" type="hidden" value="81">
+			                                    </form>
+			                                </td>                                                               
+			                                         <td width="150px"><a class="btn-success">开启</a></td>
+			                                                                   
+									 		<td width="400px"></td>
+									 	</tr>
+									 	<tr class="s1">
+                                 
+						 		<td width="50px">0</td>
+						 		<td width="400px">
+                                    <form method="get" action="http://192.168.31.194:8000/get_info/" id="qyh83">
+                                        <a href="javascript:;" onclick="aa(&#39;qyh83&#39;)" id="83">贵州新西南矿业股份有限公司毕节市亮岩镇大树煤矿</a>
+                                        <input name="qyh" type="hidden" value="83">
+                                    </form>
+                                </td>
+                                
+                                    <td width="150px"><a class="btn btn-danger">关闭</a></td>
+                                
+
+
+						 		<td width="400px"></td>
+						 	</tr>
+                         
+                             
+						 	<tr class="s1">
+                                 
+						 		<td width="50px">0</td>
+						 		<td width="400px">
+                                    <form method="get" action="http://192.168.31.194:8000/get_info/" id="qyh84">
+                                        <a href="javascript:;" onclick="aa(&#39;qyh84&#39;)" id="84">贵州新西南矿业股份有限公司毕节市七星关区长春堡镇金桥煤矿</a>
+                                        <input name="qyh" type="hidden" value="84">
+                                    </form>
+                                </td>
+                                
+                                    <td width="150px"><a class="btn btn-danger">关闭</a></td>
+                                
+
+
+						 		<td width="400px"></td>
+						 	</tr>
+                         
+                             
+						 	<tr class="s1">
+                                 
+						 		<td width="50px">0</td>
+						 		<td width="400px">
+                                    <form method="get" action="http://192.168.31.194:8000/get_info/" id="qyh88">
+                                        <a href="javascript:;" onclick="aa(&#39;qyh88&#39;)" id="88">贵州毕节市大吉煤矿</a>
+                                        <input name="qyh" type="hidden" value="88">
+                                    </form>
+                                </td>
+                                
+                                    <td width="150px"><a class="btn btn-danger">关闭</a></td>
+                                
+
+
+						 		<td width="400px"></td>
+						 	</tr>
+                         
+                             
+                                 
+                                     <tr class="s3">
+                                 
+                            
+						 		<td width="50px">0</td>
+						 		<td width="400px">
+                                    <form method="get" action="http://192.168.31.194:8000/get_info/" id="qyh91">
+                                        <a href="javascript:;" onclick="aa(&#39;qyh91&#39;)" id="91">贵州黔宜能源集团有限公司七星关区燕子口镇宝黔煤矿</a>
+                                        <input name="qyh" type="hidden" value="91">
+                                    </form>
+                                </td>
+                                
+                                     
+                                         <td width="150px"><a class="btn btn-success">开启</a></td>
+                                     
+                                
+
+
+						 		<td width="400px"></td>
+						 	</tr>
+                         
+                             
+                                 
+                                     <tr class="s3">
+                                 
+                            
+						 		<td width="50px">0</td>
+						 		<td width="400px">
+                                    <form method="get" action="http://192.168.31.194:8000/get_info/" id="qyh95">
+                                        <a href="javascript:;" onclick="aa(&#39;qyh95&#39;)" id="95">贵州含垣矿业有限公司毕节市永生煤矿</a>
+                                        <input name="qyh" type="hidden" value="95">
+                                    </form>
+                                </td>
+                                
+                                     
+                                         <td width="150px"><a class="btn btn-success">开启</a></td>
+                                     
+                                
+
+
+						 		<td width="400px"></td>
+						 	</tr>
+                         
+                             
+                                 
+                                     <tr class="s3">
+                                 
+                            
+						 		<td width="50px">0</td>
+						 		<td width="400px">
+                                    <form method="get" action="http://192.168.31.194:8000/get_info/" id="qyh100">
+                                        <a href="javascript:;" onclick="aa(&#39;qyh100&#39;)" id="100">贵州新西南矿业股份有限公司兴仁县下山镇荣阳煤矿</a>
+                                        <input name="qyh" type="hidden" value="100">
+                                    </form>
+                                </td>
+                                
+                                     
+                                         <td width="150px"><a class="btn btn-success">开启</a></td>
+                                     
+                                
+
+
+						 		<td width="400px"></td>
+						 	</tr>
+                         
+                             
+                                 
+                                     <tr class="s3">
+                                 
+                            
+						 		<td width="50px">0</td>
+						 		<td width="400px">
+                                    <form method="get" action="http://192.168.31.194:8000/get_info/" id="qyh103">
+                                        <a href="javascript:;" onclick="aa(&#39;qyh103&#39;)" id="103">贵州华瑞鼎兴能源有限公司水城县阿戛乡陈家沟煤矿</a>
+                                        <input name="qyh" type="hidden" value="103">
+                                    </form>
+                                </td>
+                                
+                                     
+                                         <td width="150px"><a class="btn btn-success">开启</a></td>
+                                     
+                                
+
+
+						 		<td width="400px"></td>
+						 	</tr>
+                         
+                             
+                                 
+                                     <tr class="s3">
+                                 
+                            
+						 		<td width="50px">0</td>
+						 		<td width="400px">
+                                    <form method="get" action="http://192.168.31.194:8000/get_info/" id="qyh105">
+                                        <a href="javascript:;" onclick="aa(&#39;qyh105&#39;)" id="105">贵州华瑞鼎兴能源有限公司六盘水市水城县阿戛乡阿戛煤矿</a>
+                                        <input name="qyh" type="hidden" value="105">
+                                    </form>
+                                </td>
+                                
+                                     
+                                         <td width="150px"><a class="btn btn-success">开启</a></td>
+                                     
+                                
+
+
+						 		<td width="400px"></td>
+						 	</tr>                                                                                    
+                                     <tr class="s3">                                                           
+						 		<td width="50px">0</td>
+						 		<td width="400px">
+                                    <form method="get" action="http://192.168.31.194:8000/get_info/" id="qyh106">
+                                        <a href="javascript:;" onclick="aa(&#39;qyh106&#39;)" id="106">贵州华瑞鼎兴能源有限公司水城县大田煤矿</a>
+                                        <input name="qyh" type="hidden" value="106">
+                                    </form>
+                                </td>                                                                    
+                                         <td width="150px"><a class="btn btn-success">开启</a></td>                                                                   
+						 		<td width="400px"></td>
+						 	</tr>                                                                                     
+                                     <tr class="s2">                                                                
+						 		<td width="50px">0</td>
+						 		<td width="400px">
+                                    <form method="get" action="http://192.168.31.194:8000/get_info/" id="qyh115">
+                                        <a href="javascript:;" onclick="aa(&#39;qyh115&#39;)" id="115">贵州美升能源集团有限公司水城县阿佐煤矿</a>
+                                        <input name="qyh" type="hidden" value="115">
+                                    </form>
+                               </td>                                                                    
+                                         <td width="150px"><a class="btn btn-warning">技改</a></td>                                                                   
+						 		<td width="400px">15t/a的生产矿井，有30t/a的采矿证</td>
+						 	</tr>                                                                                     
+                                     <tr class="s2">                                                               
+						 		<td width="50px">0</td>
+						 		<td width="400px">
+                                    <form method="get" action="http://192.168.31.194:8000/get_info/" id="qyh116">
+                                        <a href="javascript:;" onclick="aa(&#39;qyh116&#39;)" id="116">贵州美升能源集团有限公司六枝特区新兴煤矿</a>
+                                        <input name="qyh" type="hidden" value="116">
+                                    </form>
+                                </td>                                                                   
+                                         <td width="150px"><a class="btn btn-warning">技改</a></td>
+                                                                 
+						 		<td width="400px">技改、扩界扩能</td>
+						 	</tr>
+						 	 <tr class="s3">                                                            
+						 		<td width="50px">0</td>
+						 		<td width="400px">
+                                    <form method="get" action="http://192.168.31.194:8000/get_info/" id="qyh119">
+                                        <a href="javascript:;" onclick="aa(&#39;qyh119&#39;)" id="119">贵州丰联矿业有限公司六枝特区六龙煤矿</a>
+                                        <input name="qyh" type="hidden" value="119">
+                                    </form>
+                                </td>                                                                   
+                                         <td width="150px"><a class="btn btn-success">开启</a></td>                                                                    
+						 		<td width="400px"></td>
+						 	</tr>                                                                                     
+                                     <tr class="s2">                                                               
+						 		<td width="50px">0</td>
+						 		<td width="400px">
+                                    <form method="get" action="http://192.168.31.194:8000/get_info/" id="qyh124">
+                                        <a href="javascript:;" onclick="aa(&#39;qyh124&#39;)" id="124">贵州吉龙投资有限公司盘县洒基镇长箐煤矿</a>
+                                        <input name="qyh" type="hidden" value="124">
+                                    </form>
+                                </td>                                                                 
+                                         <td width="150px"><a class="btn btn-warning">技改</a></td>                                                                   
+						 		<td width="400px">技改、扩界扩能</td>
+						 	</tr>                                                                                    
+                                     <tr class="s2">                                                               
+						 		<td width="50px">0</td>
+						 		<td width="400px">
+                                    <form method="get" action="http://192.168.31.194:8000/get_info/" id="qyh126">
+                                        <a href="javascript:;" onclick="aa(&#39;qyh126&#39;)" id="126">贵州吉龙投资有限公司盘县洒基镇荣祥矿井</a>
+                                        <input name="qyh" type="hidden" value="126">
+                                    </form>
+                                </td>                                                                   
+                                         <td width="150px"><a class="btn btn-warning">技改</a></td>                                                                    
+						 		<td width="400px">技改、扩界扩能</td>
+						 	</tr>                                                                                    
+                                     <tr class="s2">                                                                
+						 		<td width="50px">0</td>
+						 		<td width="400px">
+                                    <form method="get" action="http://192.168.31.194:8000/get_info/" id="qyh127">
+                                        <a href="javascript:;" onclick="aa(&#39;qyh127&#39;)" id="127">贵州吉龙投资有限公司盘县松河乡松林煤矿</a>
+                                        <input name="qyh" type="hidden" value="127">
+                                    </form>
+                                </td>
+                                
+                                     
+                                         <td width="150px"><a class="btn btn-warning">技改</a></td>
+                                     
+                                
+
+
+						 		<td width="400px">技改、扩界扩能</td>
+						 	</tr>
+                         
+                             
+                                 
+                                     <tr class="s2">
+                                     
+                            
+						 		<td width="50px">0</td>
+						 		<td width="400px">
+                                    <form method="get" action="http://192.168.31.194:8000/get_info/" id="qyh128">
+                                        <a href="javascript:;" onclick="aa(&#39;qyh128&#39;)" id="128">贵州博鑫矿业股份有限公司盘县洒基镇二排煤矿</a>
+                                        <input name="qyh" type="hidden" value="128">
+                                    </form>
+                                </td>
+                                
+                                     
+                                         <td width="150px"><a class="btn btn-warning">技改</a></td>
+                                     
+                                
+
+
+						 		<td width="400px">技改、扩界扩能</td>
+						 	</tr>
+                         
+                             
+                                 
+                                     <tr class="s2">
+                                     
+                            
+						 		<td width="50px">0</td>
+						 		<td width="400px">
+                                    <form method="get" action="http://192.168.31.194:8000/get_info/" id="qyh129">
+                                        <a href="javascript:;" onclick="aa(&#39;qyh129&#39;)" id="129">贵州吉龙投资有限公司盘县洒基镇五排煤矿</a>
+                                        <input name="qyh" type="hidden" value="129">
+                                    </form>
+                                </td>
+                                
+                                     
+                                         <td width="150px"><a class="btn btn-warning">技改</a></td>
+                                     
+                                
+
+
+						 		<td width="400px">技改、扩界扩能</td>
+						 	</tr>
+                         
+									</tbody>
+								</table>
+							</div>			
+						</div>
+					</div>
+				
+				</div>				
+		</div>
+		<img src="img/bg-bottom-ranking-list.png"  class="bottom-img">
+		<div class="page">
+						<a id="btn0"></a>				
+						<input id="pageSize" type="text" size="1" maxlength="2" value="getDefaultValue()"/>
+						<a> 条 </a> 
+						<!--<a href="javascript:;" id="pageSizeSet">设置</a> 
+						<a id="sjzl"></a> -->
+						<a  href="javascript:;" id="btn1">首页</a>
+						<a  href="javascript:;" id="btn2">上一页</a>
+						<a  href="javascript:;" id="btn3">下一页</a>
+						<a  href="javascript:;" id="btn4">尾页</a> 
+						<a>转到</a>
+						<input id="changePage" type="text" size="1" maxlength="4"/>
+						<a>页</a>
+						<a  href="javascript:;" id="btn5">跳转</a>
+				</div>
+	</div>
+	</div>
+</div>
+				
+			<div id="top"></div>
+			<script type="text/javascript" src="js/page.js"></script>	
+			<script>
+				$(function(){
+					var scroll_bar = $(".app-menu"),
+						b = scroll_bar.offset();
+						$(window).on("scroll",function(){
+							var c = $(document).scrollTop();
+							if(b.top<=c){
+								scroll_bar.css({'position':'fixed','top':'0px'})
+							}else{
+								scroll_bar.css({'position':'absolute','top':'0px'});
+								$('.appRank-container').css({'marginTop':'0px'});
+							}
+						});
+					
+					
+					//导航
+					$('.clearfix>li').click(function(){
+						$(this).addClass('nav_choose').siblings().removeClass('nav_choose');
+					});
+				});
+			</script>
+			<script>
+    $(function(){
+        var scroll_bar = $("#mytable");
+        var bar_head = $("#bar_head");
+        var bar_height = bar_head.height();
+        var sroll_header= scroll_bar.clone().attr('id','bb');
+        $(window).scroll(function(){
+            var scroll_top = $(document).scrollTop() - scroll_bar.offset().top;
+   
+            if (scroll_top > 0) {
+                $('body').append('<div id="shelter"></div>');
+                $("#shelter").css({'height':bar_height,'position':'fixed','color':'#8493e3','textAlign':'center','top':'0','overflow':'hidden','width':'1051px','margin': '0 auto','left':'154px','right':'0','borderTop':'2px solid #3a7bff','border-top-left-radius':'4px','border-top-right-radius':'4px'});
+                sroll_header.appendTo('#shelter');
+                $('#shelter table').removeClass();
+                $('#shelter table').css({'width':'1051px','backgroundColor':'#394184','margin':'0 auto'});
+                 $('#shelter table tr th:eq(0)').css({'width':'100px','paddingLeft':'43px','textAlign':'left','height':bar_height});
+                $('#shelter table tr th:eq(2)').css({'width':'100px','paddingLeft':'28px','textAlign':'left','height':bar_height});
+                $('#shelter table tr th').css({'width':'100px','zIndex':'9999','height':bar_height});
+                $('#shelter table tr td').css({'padding':'20px','textAlign':'center'});
+   
+                $('#shelter').show();
+   
+            }else {
+                $('#shelter').hide();
+            }
+        });
+   
+    });
+ 
+</script>
+<script>
+	$(function(){
+//		回到顶部
+$(window).scroll(function(){
+				var top = $(document).scrollTop();
+				if(top>500){
+					$('#top').fadeIn(800);
+				}else{
+					 $('#top').fadeOut(800);
+				}
+			});
+			$("#top").click(function(){
+				$('html,body').animate({scrollTop:0},500);
+			})
+		$('.menu-en li:eq(0)').click(function(){
+			$('.s3').show();
+			$('.s1').show();
+			$('.s2').show();
+		});
+		$('.menu-en li:eq(1)').click(function(){
+			$('.s3').show();
+			$('.s1').hide();
+			$('.s2').hide();
+		});
+		$('.menu-en li:eq(2)').click(function(){
+			$('.s3').hide();
+			$('.s2').show();
+			$('.s1').hide();
+		});
+		$('.menu-en li:eq(3)').click(function(){
+			$('.s3').hide();
+			$('.s2').hide();
+			$('.s1').show();
+		});
+	});
+</script>
+	</body>
+</html>

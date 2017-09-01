@@ -1,0 +1,75 @@
+
+.app-menu {
+	float: left;
+	display: block;
+	box-shadow: 0 4px 8px #17193b;
+	background: rgba(48, 94, 202, .12);
+	padding: 10px 0;
+	border-radius: 2px;
+}
+
+.fixed .app-menu {
+	position: fixed;
+	z-index: 100;
+	top: 100px
+}
+
+.app-menu .menu-en {
+	max-height: 420px
+}
+
+.app-menu ul {
+	width: 120px;
+	color: #8493e3;
+	font-size: 12px;
+	list-style: none;
+	overflow-y: hidden;
+	position: relative
+}
+
+.app-menu ul li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 10px;
+	cursor: pointer
+}
+
+.app-menu ul li a {
+	color: #95a3ea;
+	display: block
+}
+
+.app-menu ul li em {
+	position: absolute;
+	right: 5px;
+	top: 11px;
+	width: 0;
+	height: 0;
+	text-indent: -9999px;
+	border-left: 5px solid #7384da;
+	border-right: 5px solid transparent;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent
+}
+
+.app-menu ul li:hover em {
+	display: none
+}
+
+.app-menu ul li span {
+	padding: 10px 43px;
+	display: block
+}
+
+.app-menu ul li i {
+	margin-right: 10px
+}
+
+.app-menu ul li.active,
+.app-menu ul li:hover {
+	position: relative;
+	z-index: 99;
+	color: #fff;
+	background: rgba(31, 45, 117, .98)
+}
